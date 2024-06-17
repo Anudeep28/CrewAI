@@ -10,32 +10,42 @@ from crewai_tools import SerperDevTool, \
                             ScrapeWebsiteTool, \
                             WebsiteSearchTool
 from langchain_community.tools import ddg_search
-from utils import get_openai_api_key, pretty_print_result
+from utils import get_openai_api_key, pretty_print_result, get_gemini_api_key
 from utils import get_serper_api_key, get_openai_base_url
 
 load_dotenv(find_dotenv()) # type: ignore
 # openai.api_key =  os.environ["OPENAI_API_KEY"] # type: ignore
 # openai.base_url = os.environ["OPENAI_BASE_URL"] # type: ignore
 
-news_scarpe_tool = ScrapeWebsiteTool(#)
-    website_url="https://hbr.org/2023/12/strategy-not-technology-is-the-key-to-winning-with-genai"
-)
+# news_scarpe_tool = ScrapeWebsiteTool(#)
+#     website_url="https://hbr.org/2023/12/strategy-not-technology-is-the-key-to-winning-with-genai"
+# )
 
-from langchain_openai import ChatOpenAI
-#OPENAI_API_KEY = os.environ["OPENAI_API_KEY"]
+# ////////////////////////////////////////////////////////////////////
+# from langchain_openai import ChatOpenAI
+# #OPENAI_API_KEY = os.environ["OPENAI_API_KEY"]
 
 
 
-# When using chatopenai function
-from langchain_openai import ChatOpenAI
-llm = ChatOpenAI(
-    api_key=get_openai_api_key(),
-    #model = "TheBloke/Mistral-7B-Instruct-v0.1-GGUF",
-    model = "TheBloke/OpenHermes-2.5-Mistral-7B-GGUF",
-    base_url= get_openai_base_url(),
-    temperature=0.2,
+# # When using chatopenai function
+# from langchain_openai import ChatOpenAI
+# llm = ChatOpenAI(
+#     api_key=get_openai_api_key(),
+#     #model = "TheBloke/Mistral-7B-Instruct-v0.1-GGUF",
+#     model = "TheBloke/OpenHermes-2.5-Mistral-7B-GGUF",
+#     base_url= get_openai_base_url(),
+#     temperature=0.2,
 
-)
+# )
+###### |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+############################## For using gemini ###############
+from langchain_google_genai import ChatGoogleGenerativeAI
+import os
+
+api_key = get_gemini_api_key()  # replace with your actual API key if not stored in environment variables
+llm_gemini = ChatGoogleGenerativeAI(model="gemini-1.5-flash", google_api_key=api_key) # type: ignore
+###################################################
 
 
 planner = Agent(
@@ -49,9 +59,10 @@ planner = Agent(
               "Your work is the basis for "
               "the Content Writer to write an article on this topic.",
     allow_delegation=False,
-    tools=[news_scarpe_tool],
+    # tools=[news_scarpe_tool],
     
-    llm=llm,
+    #llm=llm,
+    llm=llm_gemini,
 	verbose=True
 )
 
@@ -75,7 +86,8 @@ writer = Agent(
               "when your statements are opinions "
               "as opposed to objective statements.",
     allow_delegation=False,
-    llm=llm,
+    # llm=llm,
+    llm=llm_gemini,
     verbose=True
 )
 
@@ -92,7 +104,8 @@ editor = Agent(
               "and also avoids major controversial topics "
               "or opinions when possible.",
     allow_delegation=False,
-    llm=llm,
+    # llm=llm,
+    llm=llm_gemini,
     verbose=True
 )
 
@@ -145,6 +158,6 @@ crew = Crew(
     verbose=2
 )
 
-result = crew.kickoff(inputs={"topic": "Strategy for GenAI"})
+result = crew.kickoff(inputs={"topic": "Taxonomy of LLM Risk"})
 
 print(result)

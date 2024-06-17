@@ -35,6 +35,9 @@ llm = ChatOpenAI(
     api_key=get_openai_api_key(),
     #model = "TheBloke/Mistral-7B-Instruct-v0.1-GGUF",
     model = "TheBloke/OpenHermes-2.5-Mistral-7B-GGUF",
+    # model = "bartowski/Phi-3-medium-128k-instruct-GGUF",
+    # model = "bartowski/Llama-3-8B-Instruct-Gradient-1048k-GGUF",
+    #model = "NousResearch/Hermes-2-Pro-Llama-3-8B-GGUF",
     base_url= get_openai_base_url(),
     temperature=0.1,
 

@@ -175,12 +175,20 @@ crew = Crew(
 # Running the Crew
 # Note: LLMs can provide different outputs for they same input, so what you get might be different than what you see in the video.
 
+# inputs = {
+#     "lead_name": "DeepLearningAI",
+#     "industry": "Online Learning Platform",
+#     "key_decision_maker": "Andrew Ng",
+#     "position": "CEO",
+#     "milestone": "product launch"
+# }
+
 inputs = {
-    "lead_name": "DeepLearningAI",
-    "industry": "Online Learning Platform",
-    "key_decision_maker": "Andrew Ng",
+    "lead_name": "Meta",
+    "industry": "Enterprise Solutions",
+    "key_decision_maker": "Mark Zukerberg",
     "position": "CEO",
-    "milestone": "product launch"
+    "milestone": "Meta llama-3"
 }
 
 result = crew.kickoff(inputs=inputs)

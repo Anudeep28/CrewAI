@@ -15,9 +15,34 @@ def get_openai_base_url():
     openai_api_key = os.getenv("OPENAI_BASE_URL")
     return openai_api_key
 
+def get_gemini_api_key():
+    load_env()
+    openai_api_key = os.getenv("GEMINI_API_KEY")
+    return openai_api_key
+
 def get_serper_api_key():
     load_env()
     openai_api_key = os.getenv("SERPER_API_KEY")
+    return openai_api_key
+
+def get_aws_model_id():
+    load_env()
+    openai_api_key = os.getenv("AWS_MODEL_ID")
+    return openai_api_key
+
+def get_aws_access_key():
+    load_env()
+    openai_api_key = os.getenv("AWS_ACCESS_KEY_ID")
+    return openai_api_key
+
+def get_aws_secret_access_key():
+    load_env()
+    openai_api_key = os.getenv("AWS_SECRET_ACCESS_KEY")
+    return openai_api_key
+
+def get_aws_region():
+    load_env()
+    openai_api_key = os.getenv("AWS_REGION")
     return openai_api_key
 
 # break line every 80 characters if line is longer than 80 characters
