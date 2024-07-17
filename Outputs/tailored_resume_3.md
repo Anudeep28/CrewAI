@@ -5,12 +5,12 @@
 - email: anupatil28@gmail.com
 ## Summary
 ”I strive to maintain a well-rounded perspective and avoid falling into the trap of having
-a ”hammer syndrome” condition. I embrace a multidisciplinary mindset, by integrating
+a "hammer syndrome" condition. I embrace a multidisciplinary mindset, by integrating
 perspective from various fields from applied mathematics, data science, computational
 fluid dynamics (CFD) and engineering.”
 ## Skills
 Skills: Financial modeling, Statistical Modeling, Exploratory Data Analytics,
-Calculus, Numerical methods, Optimization, CFD
+Calculus, Numerical methods, Optimization, CFD, Credit Risk Modeling, Credit Risk Monitoring, Financial Statement Analysis, Risk Assessment, Regulatory Compliance, IFRS 9 Understanding, Quantitative Analysis, Communication and Presentation
 Softwares: Python, PySpark, PyTorch, Python Dash, R, R-shiny, AWS,
 streamlit, Latex (Basic), Linux, Django framework
 Stochastic Methods: Monte carlo, Simulated Annealing
@@ -19,11 +19,11 @@ Naive Bayes, DT, RF, Linear Regression, Logistic Regression, GA.
 ## Work Experience
 ### Crisil ltd (Lead Analyst - LA) Jan 2018 - Present
 #### Jul 2023 - Present Large Language Model Assessment Framework ( LA )
-- Together with the team, We utilized the insights gained from Deeplearning.ai and Coursera courses to construct an initial LLM (Legal Lifecycle Management) assessment framework.
+- Together with the team, We utilized the insights gained from Deeplearning.ai and Coursera courses to construct an initial LLM (Legal Lifecycle Management) assessment framework.
 - This framework was designed to evaluate the Inputs/outputs of the LLM model, which
 we hope to mark a significant step in the application of deep learning principles to legal
 assessments.
-- Our collaborative effort is laying the groundwork for further advancements in the integration of AI in legal processes.
+- Our collaborative effort is laying the groundwork for further advancements in the integration of AI in legal processes.
 #### Jul 2021 - Dec 23 Mortgage Monitoring Model Framework in AWS Spark ( SQA / LA )
 - Developed and implemented PD, EAD, and DOD frameworks in PySpark to generate a
 summary info file with populated monitoring metrics.
@@ -38,11 +38,11 @@ auto-generates a consolidated Word document with all the plots.
 - Understood the pricing model validation process of the client in Excel and the available
 client pricing Python functions.
 #### Jan 2020 - Apr 2020 Index Model Validation and testing ( QA )
-- Understanding the methodology document of Index models and verification of the calculations. Verified calculations and ensured compliance with regulatory guidelines IOSCO benchmark regulations
+- Understanding the methodology document of Index models and verification of the calculations. Verified calculations and ensured compliance with regulatory guidelines IOSCO benchmark regulations
 - Responsible for documentation of the findings.
-#### Jun 2019 - Dec 2019 Insurance Ratings Summary Record model Migration from Excel to R platform ( QA )
-- Understanding the Insurance model and methodology document. Migrated the Excelbased model to the R-platform with integrating it with R-shiny for user interface.
-- Validated the R model for various scenarios to comply with the document and documented the model and the results of validation.
+#### Jun 2019 - Dec 2019 Insurance Ratings Summary Record model Migration from Excel to R platform ( QA )
+- Understanding the Insurance model and methodology document. Migrated the Excelbased model to the R-platform with integrating it with R-shiny for user interface.
+- Validated the R model for various scenarios to comply with the document and documented the model and the results of validation.
 #### Oct 2018 - Jun 2019 Development of Credit Risk Modeling Tool in Python Dash ( QA )
 - Developed a end-to-end Machine learning and statistical tool for Credit Decision using
 Python and python dash in compliance with IFRS9 guidelines, which included techniques
@@ -53,25 +53,23 @@ automated report generation.
 -Developed a text mining tool for text classification and summarization of the financial
 news in python. Pre-processed the text and extracted features in Python. Integrated it
 with a simple GUI using Python Tkinter
-### IDST ( Institute of Defence Scientists and Technologist )
-#### Dec 2015 - Jul 2016 Project Associate at IDST, Pune
-- FSAPDS ( Hyper-sonic Projectile Analysis)
-- CFD Analysis using OpenFoam
-- Worked on FSAPDS (Hyper-sonic Projectile Analysis) CFD analysis using OpenFoam, CFD
-meshing using open-source software Engrid, Netgen, Snappyhexmesh and commercial Hypermesh.
-## Academic Projects
-- Jan 2018 - June 2018 Credit Risk - Development of PD model at Crisil Ltd.
-- Apr 2017 Exploratory Data Analysis of various Bird data over Maharashtra explored
-using R and R maps.
-- Apr 2017 participated in ”Loan Prediction 3” in Vidhya Analytics. Accuracy Achieved
-0.7666.
-- Apr 2017 Programmed a Pigeon vision system in R language similar to Hawk eye
-for prediction of LBW decisions in cricket.
-- Mar 2017 Using ADA techniques to study the Leopard blood Data. Using various
-clustering and statistical techniques to Infer important outlooks.
-- Mar 2017 Programmed an SIR model in R language for the spread of Rabbis in
-a Locality.
-- Nov 2016 Developed an Algorithm based on Game Theory ”Prisoner’s Dilemma”.
+#### **Credit Risk Model Development and Implementation**
+- Developed and implemented credit risk models, including PD, LGD, and EAD models, to assess and manage credit risk exposures.
+- Utilized statistical techniques and machine learning algorithms to build predictive models for credit risk assessment.
+- Collaborated with stakeholders to define model requirements, validate model performance, and ensure alignment with regulatory guidelines (e.g., SR 11-7).
+#### **Credit Risk Model Monitoring and Validation**
+- Conducted ongoing monitoring of credit risk models to ensure their accuracy, stability, and effectiveness.
+- Analyzed model performance metrics, identified potential model drift, and implemented corrective actions as needed.
+- Developed and maintained model documentation and reporting, including model validation reports and performance dashboards.
+#### **IFRS9 Implementation and Application**
+- Implemented and applied IFRS 9 accounting standards for credit risk, including the calculation of expected credit losses (ECL).
+- Developed and implemented processes for ECL estimation, including the use of credit risk models and economic forecasting.
+#### **Basel Regulatory Framework Compliance**
+- Demonstrated a comprehensive understanding of Basel I, II, and III regulations related to credit risk management.
+- Applied Basel principles to credit risk modeling, capital adequacy calculations, and regulatory reporting.
+#### **Exposure to Credit Risk Management**
+- Gained extensive experience in the credit risk function, working closely with credit risk analysts, portfolio managers, and senior management.
+- Developed a strong understanding of credit risk appetite, risk mitigation strategies, and the impact of credit risk on business decisions.
 ## Education
 ### Aug 2016 -June 2018 M.tech in Mathematical Modeling and Simulation, SavitriBai Phule Pune University,
 - Major: Machine Learning, Computational fluid dynamics

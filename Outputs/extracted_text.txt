@@ -1,0 +1,190 @@
+* **Analyzing the impact of IFRS9 on the company's financial statements.** This project could involve assessing the impact on earnings, capital, and liquidity.
+* **Preparing a white paper on IFRS9 implementation.** This project could involve summarizing the key requirements of IFRS9 and providing guidance to other companies.
+
+
+## **Model Reviews as per SR 11-7**
+
+**Skills:**
+
+* **SR 11-7:** In-depth understanding of SR 11-7 regulatory guidelines for model risk management.
+* **Model Risk Management:** Experience with model risk management frameworks and practices.
+* **Model Review:** Experience with conducting model reviews, including documentation review, model validation, and independent testing.
+* **Regulatory Compliance:** Strong knowledge of regulatory requirements related to model risk management.
+* **Communication & Documentation:** Ability to effectively communicate findings and recommendations from model reviews.
+
+**Experience:**
+
+* Conducting model reviews as per SR 11-7 guidelines.
+* Assessing model documentation, validation procedures, and testing methodologies.
+* Identifying and evaluating model risks, including model bias, instability, and data quality issues.
+* Recommending corrective actions to address model risks.
+* Working with model developers to implement recommended changes.
+
+**Projects:**
+
+* **Conducting a model review of a specific credit risk model.** This project could involve reviewing model documentation, validating the model's performance, and identifying potential risks.
+* **Developing a model risk management framework.** This project could involve defining policies and procedures for model development, validation, and monitoring.
+* **Preparing a report on model review findings.** This project could involve summarizing the key findings and recommendations from a model review.
+
+
+## **Understanding of PD, LGD and EAD Models and EL**
+
+**Skills:**
+
+* **Probability of Default (PD):** Understanding of PD models, including methodologies for estimating default probabilities.
+* **Loss Given Default (LGD):** Knowledge of LGD models, including approaches for estimating the potential loss given a default.
+* **Exposure at Default (EAD):** Familiarity with EAD models and how to calculate the exposure at the time of default.
+* **Expected Loss (EL):** Ability to calculate expected loss based on PD, LGD, and EAD.
+* **Credit Risk Measurement:** Experience with using PD, LGD, and EAD models to measure credit risk.
+
+**Experience:**
+
+* Developing or using PD, LGD, and EAD models in credit risk analysis.
+* Calculating expected loss for different loan portfolios.
+* Assessing the impact of changes in PD, LGD, or EAD on credit risk.
+* Contributing to the development of credit risk policies and procedures.
+
+**Projects:**
+
+* **Developing a new PD model for a specific loan product.** This project could involve gathering data, building the model, and validating its performance.
+* **Analyzing the impact of changes in LGD on the company's credit risk.** This project could involve assessing the impact of changes in the economic environment or regulatory requirements.
+* **Calculating expected loss for the company's credit risk portfolio.** This project could involve using PD, LGD, and EAD models to estimate the potential loss over a given period.
+
+
+## **Understanding of Basel-1, 2, 3 and Exposure to Credit Risk**
+
+**Skills:**
+
+* **Basel Accords:**  In-depth knowledge of Basel I, II, and III regulations, particularly related to credit risk and capital requirements.
+* **Regulatory Compliance:** Experience with implementing Basel regulations for credit risk.
+* **Capital Management:** Understanding of capital management principles and how Basel regulations impact capital adequacy.
+* **Risk Management:** General knowledge of risk management principles and practices.
+* **Financial Reporting:** Familiarity with financial reporting requirements related to Basel regulations.
+
+**Experience:**
+
+* Calculating capital requirements under Basel regulations.
+* Assessing the impact of Basel regulations on the company's business.
+* Developing policies and procedures to ensure compliance with Basel regulations.
+* Working with regulators to address any compliance issues.
+
+**Projects:**
+
+* **Implementing Basel III capital requirements.** This project could involve developing new policies and procedures, training staff, and updating systems.
+* **Analyzing the impact of Basel regulations on the company's profitability.** This project could involve assessing the impact on earnings, capital, and liquidity.
+* **Preparing a report on Basel compliance.** This project could involve summarizing the company's compliance status and identifying any areas for improvement.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Okay, here's a breakdown of the key skills, experiences, and projects relevant for a credit risk role, based on the areas you mentioned:
+
+**1. Credit Risk Model Development:**
+
+* **Skills:**
+    * **Statistical Modeling:**  Expertise in statistical techniques like regression analysis, logistic regression, survival analysis, and time series analysis.
+    * **Machine Learning:** Familiarity with machine learning algorithms for credit risk, such as decision trees, random forests, support vector machines, and neural networks.
+    * **Programming:** Proficiency in programming languages like Python, R, or SAS for model development and implementation.
+    * **Data Analysis:** Strong analytical skills to analyze large datasets, identify trends, and draw meaningful insights.
+    * **Model Validation:** Understanding of model validation techniques like backtesting, stress testing, and scenario analysis.
+* **Experience:**
+    * Developing and implementing credit risk models for various loan products or portfolios.
+    * Working with large datasets, including financial statements, credit bureau data, and internal data sources.
+    * Collaborating with business stakeholders to understand their needs and translate them into model requirements.
+* **Projects:**
+    * Developing a credit scoring model to assess borrower creditworthiness.
+    * Creating a model to predict loan defaults or delinquencies.
+    * Implementing a model to optimize loan pricing or risk-based pricing.
+
+**2. Credit Risk On-going Model Monitoring:**
+
+* **Skills:**
+    * **Model Performance Tracking:** Ability to monitor model performance metrics like accuracy, precision, recall, and AUC over time.
+    * **Model Stability Analysis:** Understanding of techniques to assess model stability and identify potential drift or bias.
+    * **Alerting and Reporting:** Ability to set up alerts for model performance deviations and generate reports for stakeholders.
+    * **Data Management:** Experience with data quality checks, data cleansing, and data governance.
+* **Experience:**
+    * Monitoring the performance of existing credit risk models.
+    * Identifying and investigating model performance deviations.
+    * Implementing model recalibration or updates based on performance analysis.
+    * Developing and maintaining model monitoring processes and procedures.
+* **Projects:**
+    * Implementing a model monitoring system for a specific credit risk model.
+    * Developing a dashboard to track model performance and identify potential issues.
+    * Conducting a model review to assess the model's stability and performance.
+
+**3. IFRS9 Understanding:**
+
+* **Skills:**
+    * **IFRS9 Accounting Standards:** In-depth understanding of the IFRS9 accounting standard, especially the requirements for expected credit loss (ECL) estimation.
+    * **Financial Statement Analysis:** Ability to analyze financial statements to assess borrower credit risk and estimate ECL.
+    * **Credit Risk Assessment:** Understanding of different credit risk assessment methodologies and their application under IFRS9.
+* **Experience:**
+    * Implementing IFRS9 requirements for credit risk accounting.
+    * Developing ECL estimation models and processes.
+    * Providing technical expertise on IFRS9-related matters.
+* **Projects:**
+    * Implementing an IFRS9-compliant ECL calculation system.
+    * Developing a training program on IFRS9 for internal stakeholders.
+    * Conducting a review of the ECL estimation process to ensure compliance with IFRS9.
+
+**4. Model Reviews as per SR 11-7:**
+
+* **Skills:**
+    * **SR 11-7 Guidelines:** Understanding of the SR 11-7 guidelines for model risk management and model validation.
+    * **Model Risk Management:** Knowledge of model risk management principles, including model governance, validation, and monitoring.
+    * **Model Documentation:** Ability to document model development, validation, and monitoring processes.
+* **Experience:**
+    * Conducting model reviews according to SR 11-7 requirements.
+    * Assessing model risk and identifying potential model weaknesses.
+    * Providing recommendations for model improvement and mitigation of model risk.
+* **Projects:**
+    * Conducting a model review of a specific credit risk model.
+    * Developing a model risk management framework for the organization.
+    * Providing training on SR 11-7 and model risk management.
+
+**5. Understanding of PD, LGD, and EAD Models and EL:**
+
+* **Skills:**
+    * **Probability of Default (PD):** Understanding of PD models, including their development, validation, and application.
+    * **Loss Given Default (LGD):** Familiarity with LGD models and their use in credit risk assessments.
+    * **Exposure at Default (EAD):** Knowledge of EAD models and their role in calculating potential losses.
+    * **Expected Loss (EL):** Ability to calculate EL using PD, LGD, and EAD models.
+* **Experience:**
+    * Working with PD, LGD, and EAD models in credit risk management.
+    * Contributing to the development or validation of these models.
+    * Applying these models to assess credit risk and manage capital requirements.
+* **Projects:**
+    * Developing a PD model for a specific loan portfolio.
+    * Validating an LGD model for a particular type of credit exposure.
+    * Calculating EL for a loan portfolio using PD, LGD, and EAD models.
+
+**6. Understanding of Basel-1, 2, 3 and Exposure to Credit Risk:**
+
+* **Skills:**
+    * **Basel Accords:** Understanding of the Basel Accords, including the capital requirements and regulatory framework for credit risk.
+    * **Credit Risk Measurement:** Ability to measure credit risk using various methodologies, such as the internal ratings-based (IRB) approach.
+    * **Capital Planning:** Familiarity with capital planning processes and the impact of credit risk on capital adequacy.
+* **Experience:**
+    * Applying Basel Accords requirements to credit risk management.
+    * Calculating capital requirements for credit risk exposures.
+    * Contributing to capital planning and stress testing activities.
+* **Projects:**
+    * Implementing a Basel III-compliant capital calculation system.
+    * Conducting a stress test to assess the impact of credit risk on capital adequacy.
+    * Developing a credit risk management policy aligned with Basel regulations.
+
+Remember to tailor these points to your specific experiences and projects, highlighting those that align most closely with the requirements of the credit risk role you are applying for.

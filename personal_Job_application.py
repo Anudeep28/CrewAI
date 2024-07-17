@@ -26,24 +26,25 @@ semantic_search_resume = MDXSearchTool(mdx='./fake_resume.md')
 os.environ["SERPER_API_KEY"] = SERPER_API_KEY # type: ignore
 
 ######### When using openai
-llm = get_gemini_llm()
+#llm = get_gemini_llm()
+llm = get_local_llm()
 ###########################################################
 # Creating Agents for the work
 # Agent 1
 # Agent 1: Researcher
 researcher = Agent(
-    role="Tech Job Researcher",
+    role="Resume content Researcher",
     goal="Make sure to do amazing analysis on "
-         "job posting to help job applicants",
+         "requirements of the resume to help modify the resume",
     tools = [scrape_tool, search_tool],
     verbose=True,
     backstory=(
-        "As a Job Researcher, your prowess in "
+        "As a resume content Researcher, your prowess in "
         "navigating and extracting critical "
-        "information from job postings is unmatched."
-        "Your skills help pinpoint the necessary "
-        "qualifications and skills sought "
-        "by employers, forming the foundation for "
+        "information on the provided points/context is unmatched."
+        "Your skills help recognise the necessary "
+        "information and skills needed to be included in the resume "
+        "sought by employers, forming the foundation for "
         "effective application tailoring."
     ),
     llm=llm,
@@ -52,11 +53,11 @@ researcher = Agent(
  # Agent 2
 # Agent 2: Profiler
 profiler = Agent(
-    role="Personal Profiler for Engineers",
-    goal="Do increditble research on job applicants "
-         "to help them stand out in the job market",
+    role="Personal Profiler for Financial services",
+    goal="Do increditble research on job applicant "
+         "to help the resumes aligned with the points/context provided and market",
     tools = [scrape_tool, search_tool,
-             read_resume, semantic_search_resume],
+             read_resume],# semantic_search_resume],
     verbose=True,
     backstory=(
         "Equipped with analytical prowess, you dissect "
@@ -71,28 +72,28 @@ profiler = Agent(
 # Agent 3: 
 # Agent 3: Resume Strategist
 resume_strategist = Agent(
-    role="Resume Strategist for Engineers",
+    role="Resume Strategist for Financial sector",
     goal="Find all the best ways to make a "
-         "resume stand out in the job market.",
+         "resume align with points/context provided and the job market.",
     tools = [scrape_tool, search_tool,
-             read_resume, semantic_search_resume],
+             read_resume],# semantic_search_resume],
     verbose=True,
     backstory=(
         "With a strategic mind and an eye for detail, you "
-        "excel at refining resumes to highlight the most "
+        "excel at refining resume to highlight the most "
         "relevant skills and experiences, ensuring they "
-        "resonate perfectly with the job's requirements."
+        "resonate perfectly with the provided points/context."
     ),
     llm=llm, # using gemini for it
 )
 
 # Agent 4: Interview Preparer
 interview_preparer = Agent(
-    role="Engineering Interview Preparer",
+    role="Financial services Interview Preparer",
     goal="Create interview questions and talking points "
-         "based on the resume and job requirements",
+         "based on the resume and provided points/context",
     tools = [scrape_tool, search_tool,
-             read_resume, semantic_search_resume],
+             read_resume],#, semantic_search_resume],
     verbose=True,
     backstory=(
         "Your role is crucial in anticipating the dynamics of "
@@ -128,13 +129,13 @@ interview_preparer = Agent(
 # Task for Researcher Agent: Extract Job Requirements
 research_task = Task(
     description=(
-        "Analyze the job posting URL provided ({job_posting_url}) "
-        "to extract key skills, experiences, and qualifications "
+        "Analyze the points/context provided ({job_posting_url}) "
+        "to extract key skills, experiences, and projects "
         "required. Use the tools to gather content and identify "
-        "and categorize the requirements."
+        "and categorize the requirements. Look at max top 5 sources"
     ),
     expected_output=(
-        "A structured list of job requirements, including necessary "
+        "A structured list of extracted information on provided points/context, including necessary "
         "skills, qualifications, and experiences."
     ),
     agent=researcher,
@@ -144,8 +145,8 @@ research_task = Task(
 # Task for Profiler Agent: Compile Comprehensive Profile
 profile_task = Task(
     description=(
-        "Compile a detailed personal and professional profile "
-        "using the GitHub ({github_url}) URLs, and personal write-up "
+        "Compile a detailed professional profile "
+        "using the personal write-up and resume imported "
         "({personal_writeup}). Utilize tools to extract and "
         "synthesize information from these sources."
     ),
@@ -165,18 +166,18 @@ profile_task = Task(
 # Task for Resume Strategist Agent: Align Resume with Job Requirements
 resume_strategy_task = Task(
     description=(
-        "Using the profile and job requirements obtained from "
-        "previous tasks, tailor the resume to highlight the most "
-        "relevant areas. Employ tools to adjust and enhance the "
-        "resume content. Make sure this is the best resume even but "
-        "don't make up any information. Update every section, "
-        "inlcuding the initial summary, work experience, skills, "
-        "and education. All to better reflrect the candidates "
-        "abilities and how it matches the job posting."
+        "Using the profile and provided points/context and extracted information from "
+        "previous tasks, Update or Add the relevant information to the resume to the "
+        "work experience areas. Employ tools to adjust, Quantify the accomplishments where ever possible. "
+        "Mostly add or modify the existing sentences in work experience section of the resume. " 
+        "Make sure the resume is aligned with the points/context and extracted information. "
+        "Donot take much time doing it, Max 3 tries to refine the context"
+        "Don't make up any information only use the information provided. "
+        "Update only the skills and Work experience of Crisil section of the resume, "
     ),
     expected_output=(
-        "An updated resume that effectively highlights the candidate's "
-        "qualifications and experiences relevant to the job."
+        "An updated or modified resume that effectively highlights the candidate's "
+        "qualifications and experiences relevant to the points/context."
     ),
     output_file="tailored_resume.md",
     context=[research_task, profile_task],
@@ -187,7 +188,7 @@ resume_strategy_task = Task(
 interview_preparation_task = Task(
     description=(
         "Create a set of potential interview questions and talking "
-        "points based on the tailored resume and job requirements. "
+        "points based on the tailored resume and provided points/context and extracted information. "
         "Utilize tools to generate relevant questions and discussion "
         "points. Make sure to use these question and talking points to "
         "help the candiadte highlight the main points of the resume "
@@ -212,13 +213,13 @@ interview_preparation_task = Task(
 job_application_crew = Crew(
     agents=[researcher,
             profiler,
-            resume_strategist,
-            interview_preparer],
+            resume_strategist],
+            #interview_preparer],
 
     tasks=[research_task,
            profile_task,
-           resume_strategy_task,
-           interview_preparation_task],
+           resume_strategy_task],
+           #interview_preparation_task],
 
     verbose=True
 )
@@ -228,16 +229,13 @@ job_application_crew = Crew(
 
 # Example data for kicking off the process
 job_application_inputs = {
-    'job_posting_url': 'https://jobs.citi.com/job/pune/data-analytics-senior-analyst-c12-pune/287/65490700048',
-    'github_url': 'Anudeep Patil or https://github.com/Anudeep28',#'https://github.com/Anudeep28',
-    'personal_writeup': """Anudeep is an accomplished Data Scientist, Leader with 7 years of experience, specializing in
+    'job_posting_url': """Credit Risk Model Development, Credit Risk on-going model monitoring,
+      IFRS9 understanding, model reviews as per SR 11-7. Understanding of PD, LGD and EAD models and EL. Understanding of Basel-1,2,3 and exposure to Credit Risk""",
+    'personal_writeup': """Anudeep is an accomplished Credit Risk Expert, Leader with 7 years of experience, specializing in
     managing remote and in-office teams, and expert in multiple
-    programming languages and frameworks. He holds an MTech degree in 
+    programming languages and Financial Knowledge. He holds an MTech degree in 
     Mathematical Modeling and Simulation and a strong background in 
-    AI and data science. Anudeep has successfully led major tech 
-    initiatives and startups, proving his ability to drive
-    innovation and growth in the tech industry. Ideal for leadership
-    roles that require a strategic and innovative approach."""
+    AI and data science."""
 }
 # Note 1: LLMs can provide different outputs for they same input, so what you get might be different than what you see in the video.
 
@@ -255,4 +253,5 @@ print(result)
 
 # marketing_report.md
 # If you see this output, wait some more and than try again.
+
 
